@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Embed a client-side script (JavaScript) -->
+		<script src="https://kit.fontawesome.com/601170708b.js" crossorigin="anonymous"></script>
+		<title>Guto-Encrypt</title>
+	</head>
+	<body>
+		<main>
+			<img src="images/logo.png" class="logoIni" alt="logo tipo da alura" onclick="home()">
+			<section>
+				<form>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+					<div class="form-group">
+						<img src="images/!.png" class="img-alerta">
+						<label for="text-input">Apenas letras minúsculas e sem acento</label>
+					</div>
+					<div class="botoes-div">
+						<button class="btn-criptografar" type="submit" id="btn-criptografar"> Criptografar</button>
+						<button class="btn-descriptografar" type="submit" id="btn-descriptografar">Descriptografar</button>
+					</div>
+				</form>
+			</section>
+			<section class="message-box">
+				<div id="div-desaparece" class="message-box-div">
+				  <img src="images/mensaje.svg">
+				  <h2>Nenhuma mensagem encontrada</h2>
+				  <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+				</div>
+				<div id="div-aparece">
+				  <textarea class="div-mensagem" type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+				  <button class="btn-copiar" type="submit" id="btn-copiar">Copiar</button>
+				  <button class="btn-limpar" type="submit" id="btn-limpar"></i>Limpar</button>
+			  </section>
+		<main>
+			<script>document.getElementById("myDIV").style.display = "none";</script>
+		</main>
+		<footer>
+			<p>Gutemberg Miranda </p>
+			<p class="copyright"> &copy; Guto-Encrypt 2022</p>
+		</footer>
+	</body>
+</html>
+
